@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Date Difference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculate Date Difference</h2>
+
+        <form id="dateForm">
+            <label for="date1">Date and Time 1:</label>
+            <input type="datetime-local" id="date1" required>
+
+            <label for="date2">Date and Time 2:</label>
+            <input type="datetime-local" id="date2" required>
+
+            <p id="error-message" class="error"></p>
+        </form>
+
+        <h3>Customize Colors</h3>
+        <div class="color-picker-container">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" value="#000000">
+        </div>
+
+        <div id="result">
+            <h3>Difference:</h3>
+            <p><strong>Seconds:</strong> <span id="seconds"></span></p>
+            <p><strong>Minutes:</strong> <span id="minutes"></span></p>
+            <p><strong>Hours:</strong> <span id="hours"></span></p>
+            <p><strong>Days:</strong> <span id="days"></span></p>
+            <p><strong>Months:</strong> <span id="months"></span></p>
+            <p><strong>Years:</strong> <span id="years"></span></p>
+        </div>
+    </div>
+
+    <!-- Modification history container -->
+    <div id="history-container">
+        <h3>Modification History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
